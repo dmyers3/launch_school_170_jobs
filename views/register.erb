@@ -1,0 +1,9 @@
+<form method="post" action="/users/register">
+  <div>
+    <p><label for="username">Username:</label><input name="username" type="text" value="<%= params[:username] %>"></p>
+    <p><label for="password">Password:</label><input name="password" type="password"></p>
+    <p><label for="verify_pw">Verify Password:</label><input name="verify_pw" type="password"></p>
+    
+    <p><button type="submit">Create Account</button></p>
+  </div>
+</form>

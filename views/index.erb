@@ -1,0 +1,8 @@
+<form method="post" action="/users/signin">
+  <div>
+    <p><label for="username">Username:</label><input name="username" type="text" value="<%= params[:username] %>"></p>
+    <p><label for="password">Password:</label><input name="password" type="password"></p>
+    <p><button type="submit">Sign In</button></p>
+  </div>
+</form>
+<a href="/register">Not Registered? Create Account</a>

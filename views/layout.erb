@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/whitespace-reset.css">
+    <link rel="stylesheet" href="/stylesheets/application.css">
+  </head>
+  <body>
+    <header>
+      <% if session[:message] %>
+        <p class="flash"><%= session.delete(:message) %></p>
+      <% end %>
+      <a href="/" style="text-decoration: none"><h1 class="logo">Welcome to JobFinder</h1></a>
+      <br>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>
